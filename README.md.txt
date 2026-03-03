@@ -9,3 +9,8 @@ git push -u origin main
 git remote add origin https://github.com/TalaberImre3D/html-alapok.git
 git branch -M main
 git push -u origin main
+
+--------------Ha már ok----------------------
+git add .
+git commit -"ez egy újabb módosítás..."
+git push
