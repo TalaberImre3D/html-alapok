@@ -39,6 +39,19 @@
             background-color: black;
 
         }
+        p.div
+        {
+            background-color: blue;
+        }
+        div
+        {
+            display: block;
+            width: auto;
+            background-color: darkorange;
+        }
+        div.vonal{
+            background-color: chartreuse;
+        }
     </style>
 </head>
 <body>
@@ -49,23 +62,38 @@
     <h5>Html alapok</h5>
     <h6>Html alapok</h6>
     <p>Szöveg blokk</p>
-    <p class= "nice">blokk.</p>
-    <table border="1" >
-        <thead>
-            <tr>
-                <th colspan="3">Táblázat</th>
-            </th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>AA</td>
-                <td>BB</td>
-            </tr>
-        </tbody>
-    </table>
+    <p class="nice">blokk.</p>
+    <p class="image">div.</p>
+    
 
-    <img src="logo.png" width="700" height="400"/>
-    <video src="vid.mp4"width="600" height="400"></video>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/tzA0RzvcJwU?si=MhDj7gKamAMmuTGF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div>
+        <table border="1" >
+            <thead>
+                <tr>
+                    <th colspan="3">Táblázat</th>
+                </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AA</td>
+                    <td>BB</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+   <div class="vonal">
+        <img src="logo.png" width="700" height="400"/>
+
+   </div>
+    
+   <div>
+        <video src="vid.mp4"width="600" height="400"></video>
+   </div> 
+   <div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tzA0RzvcJwU?si=MhDj7gKamAMmuTGF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+    
 </body>
 </html>
