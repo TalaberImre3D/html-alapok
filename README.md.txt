@@ -12,5 +12,5 @@ git push -u origin main
 
 --------------Ha már ok----------------------
 git add .
-git commit -"ez egy újabb módosítás..."
+git commit -m "ez egy újabb módosítás..."
 git push
