@@ -22,6 +22,7 @@
 
 
 /* --- ALAP BEÁLLÍTÁSOK --- */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -30,9 +31,10 @@
 
 body {
     /* Háttérszín */
-    background-color: #2b2727;
+    background: #cfcfe6;
+    background: radial-gradient(circle, rgba(207, 207, 230, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
     /* Betűtípus */
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     /* Betűszín */
     color: #ebd9d9;
     /* Sormagasság */
@@ -49,36 +51,43 @@ body {
 /* --- FEJLÉC --- */
 .fejlec {
     /* Háttér, padding, szöveg igazítás */
-    background-color: rgb(9, 32, 32);
+    background-color: rgb(11, 12, 12);
     padding-bottom: 10px;
     text-align: center;
+    color: #4fcccc;
 }
 
 .fooldal-cim {
     /* Főcím stílusa */
-    font-style: italic;
+    text-transform: uppercase;
+    color: rgb(51, 51, 252) ;
     
 }
 
 .kiemeles {
     /* A "CSS" szó kiemelése a címben */
-font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: yellow;
 }
 
 .alcim {
     /* Alcím stílusa */
-    font-style: oblique;
-    color: chocolate;
+    text-transform: uppercase;
+    color: rgb(230, 225, 222);
 }
 
 
 /* --- BEVEZETŐ --- */
 .bevezeto {
     /* A bevezető szekció háttere, padding-ja */
-    background-color: dimgrey;
-    
+    background-color: rgb(66, 84, 134);
+    opacity: 0.9;
+    margin-top: 30px;
     padding-top: 10px;
     padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     border-radius: 20px;
 }
 
@@ -90,8 +99,9 @@ font-weight: bold;
 /* --- KÁRTYÁK (a fő tartalom elemei) --- */
 .kartya {
     /* Háttér, padding, margin, border, border-radius, box-shadow */
-    background-color: grey;
-    margin-top: 100px;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 36%, rgba(0, 212, 255, 1) 100%);
+    margin-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
     padding-bottom: 10px;
@@ -101,13 +111,18 @@ font-weight: bold;
     border: 2px solid rgb(10, 10, 10);
     border-radius: 10px;
     text-align: left;
+    
+    transition: 0.3s;
+}
+.kartya:hover{
+    scale: 1.03;
     filter: drop-shadow(10px 10px 7px lightblue);
 }
 
 .kartya-cim {
     /* Kártya címek stílusa */
     background-color: black;
-    color: red;
+    color: #0c7385;
     margin-right: 600px;
     text-align: center;
     text-transform: uppercase;
@@ -119,10 +134,14 @@ font-weight: bold;
 /* --- SZABÁLYOK LISTA --- */
 .szabaly-lista {
     /* Lista stílus (list-style, padding) */
+    list-style: inside ;
 }
 
 .szabaly {
     /* Egyes szabály elemek */
+    
+
+
 }
 
 
@@ -133,44 +152,83 @@ font-weight: bold;
        flex-wrap: wrap;
        gap: ...;
     */
+    display: flex;
+    
+    
 }
 
 .inspiracio-elem {
     /* Egyes inspiráció kártyák */
+    background-color: #0c7385;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    transform: 0.4s;
+}
+.inspiracio-elem:hover{
+    transform: scale(1.09);
+    background-color: #020024;
 }
 
 .inspiracio-elem h4 {
     /* Inspiráció alcímek */
+
 }
 
 
 /* --- TECHNOLÓGIA BADGE-EK --- */
 .tech-lista {
     /* Flexbox elrendezés a badge-ekhez */
+    display: flex;
 }
 
 .tech-badge {
     /* Kis címkék stílusa: háttér, padding, border-radius */
+    background-color: #0c7385;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 
 /* --- OLDALSÁV --- */
 .oldalsav {
     /* Oldalsáv háttere, pozíciója */
+    background-color: #4fcccc;
+    margin-top: 30px;
+    padding-top: 20px;
+    display: block;
+    text-align: center;
 }
 
 .oldalsav-cim {
     /* Oldalsáv címek */
+    background-color: rgb(210, 233, 7);
+    color: #020024;
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 20px;
+    
 }
 
 .szerzo-nev {
     /* Szerző neve — írd át a CSS-ben is ha akarod kiemelni */
+text-transform: uppercase;
+color: #020024;
+font-weight: bolder;
 }
 
 
 /* --- LINKEK --- */
 .link-lista {
     /* Link lista stílus */
+    display: flex;
+    list-style: inside;
+    
 }
 
 .kulso-link {
